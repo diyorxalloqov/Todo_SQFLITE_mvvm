@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app_sqflite/presentation/ui/homePage.dart';
+import 'package:todo_app_sqflite/view/homePage.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
+
+  ///  need  to add screen util and resposive 
 }
 
 class MyApp extends StatelessWidget {
@@ -14,6 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
       home: const HomePage(),
+      title: 'Todo app with SQFLite',
     );
   }
 }
